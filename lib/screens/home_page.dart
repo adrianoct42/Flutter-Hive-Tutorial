@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
   void saveNewTask() {
     if (_controller.text.isEmpty) {
       // Usando o pacote GetX -- https://pub.dev/packages/get
-      // Lembre-se de declarálo no main.dart para englobar todo o app!
+      // Lembre-se de englobar o app com GetMaterialApp no main.dart.
       Get.snackbar(
           "Warning!", "The task needs some description! Write something!",
           snackPosition: SnackPosition.BOTTOM,
