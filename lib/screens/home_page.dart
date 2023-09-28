@@ -60,7 +60,6 @@ class _HomePageState extends State<HomePage> {
         ]);
         _controller.clear(); // Limpa o text do _controller.
       });
-      Navigator.of(context).pop();
       // Update no db do hive:
       db.updateDatabase();
     }
